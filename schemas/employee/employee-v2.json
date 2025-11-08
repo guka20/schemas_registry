@@ -1,0 +1,14 @@
+{
+    "type": "record",
+    "name": "Employee",
+    "namespace": "company.avro",
+    "fields": [
+        {"name": "employee_id", "type": "int"},
+        {"name": "first_name", "type": "string"},
+        {"name": "last_name", "type": "string"},
+        {"name": "department", "type": "string"},
+        {"name": "job_title", "type": "string", "default": "Unknown"},
+        {"name": "salary", "type": "float"},
+        {"name": "hire_date", "type": "string", "default": "N/A"}
+    ]
+}

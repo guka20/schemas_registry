@@ -1,0 +1,44 @@
+{
+  "type": "record",
+  "name": "Product",
+  "namespace": "com.company.schema.product",
+  "fields": [
+    {
+      "name": "sku",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "status",
+      "type": {
+        "type": "enum",
+        "name": "InventoryStatus",
+        "symbols": ["IN_STOCK", "OUT_OF_STOCK", "LOW_STOCK"]
+      },
+      "default": "IN_STOCK"
+    },
+    {
+      "name": "pricing",
+      "type": {
+        "type": "record",
+        "name": "PricingDetails",
+        "fields": [
+          {"name": "price_usd", "type": "double"},
+          {"name": "currency", "type": "string", "default": "USD"}
+        ]
+      }
+    },
+    {
+      "name": "tags",
+      "type": {
+        "type": "array",
+        "items": "string"
+      },
+      "default": [],
+      "doc": "New in V4. List of classification tags."
+    }
+  ]
+}

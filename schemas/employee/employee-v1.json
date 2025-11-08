@@ -1,0 +1,11 @@
+{
+    "type": "record",
+    "name": "Employee",
+    "namespace": "company.avro",
+    "fields": [
+        {"name": "employee_id", "type": "int"},
+        {"name": "name", "type": "string"},
+        {"name": "department", "type": "string"},
+        {"name": "salary", "type": "float"}
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "record",
+  "name": "Product",
+  "namespace": "com.company.schema.product",
+  "fields": [
+    {
+      "name": "sku",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "unit_price",
+      "type": "double"
+    }
+  ]
+}

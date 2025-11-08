@@ -1,0 +1,25 @@
+{
+  "type": "record",
+  "name": "Client",
+  "namespace": "com.company.schema.client",
+  "fields": [
+    {
+      "name": "client_id",
+      "type": "int"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "is_active",
+      "type": "boolean"
+    },
+    {
+      "name": "email",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Added in V2. Set to null for V1 records."
+    }
+  ]
+}

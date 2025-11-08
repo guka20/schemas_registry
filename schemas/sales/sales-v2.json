@@ -1,0 +1,35 @@
+{
+  "type": "record",
+  "name": "SaleTransaction",
+  "namespace": "com.company.schema.sales",
+  "fields": [
+    {
+      "name": "sale_id",
+      "type": "long"
+    },
+    {
+      "name": "product_id",
+      "type": "string"
+    },
+    {
+      "name": "total_amount",
+      "type": "double"
+    },
+    {
+      "name": "sale_date",
+      "type": "string"
+    },
+    {
+      "name": "client_id",
+      "type": ["null", "int"],
+      "default": null,
+      "doc": "Added in V2. Allows null for pre-existing records."
+    },
+    {
+      "name": "discount_applied",
+      "type": "double",
+      "default": 0.0,
+      "doc": "Added in V2. Default is 0.0 if not present."
+    }
+  ]
+}

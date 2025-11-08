@@ -1,0 +1,24 @@
+{
+  "type": "record",
+  "name": "SaleTransaction",
+  "namespace": "com.company.schema.sales",
+  "fields": [
+    {
+      "name": "sale_id",
+      "type": "long"
+    },
+    {
+      "name": "product_id",
+      "type": "string"
+    },
+    {
+      "name": "total_amount",
+      "type": "double"
+    },
+    {
+      "name": "sale_date",
+      "type": "string",
+      "doc": "Date of sale (YYYY-MM-DD)"
+    }
+  ]
+}

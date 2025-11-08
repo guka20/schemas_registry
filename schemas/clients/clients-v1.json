@@ -1,0 +1,19 @@
+{
+  "type": "record",
+  "name": "Client",
+  "namespace": "com.company.schema.client",
+  "fields": [
+    {
+      "name": "client_id",
+      "type": "int"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "is_active",
+      "type": "boolean"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "record",
+  "name": "Product",
+  "namespace": "com.company.schema.product",
+  "fields": [
+    {
+      "name": "sku",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "unit_price",
+      "type": "double"
+    },
+    {
+      "name": "status",
+      "type": {
+        "type": "enum",
+        "name": "InventoryStatus",
+        "symbols": ["IN_STOCK", "OUT_OF_STOCK", "LOW_STOCK"]
+      },
+      "default": "IN_STOCK",
+      "doc": "New in V2. Defaults to IN_STOCK for old records."
+    }
+  ]
+}
